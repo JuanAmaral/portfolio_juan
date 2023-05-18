@@ -1,9 +1,5 @@
 import Image from "next/image";
 
 export default function portfolio() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      portfolio
-    </main>
-  );
+  return <main className="container bg-blue-500">portfolio</main>;
 }

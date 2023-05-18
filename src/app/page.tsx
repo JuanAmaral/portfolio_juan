@@ -1,19 +1,41 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
+import React, { useState } from "react";
+
+import { Container, SectionTest } from "./pages/style.ts/style";
+import ScrollContainer from "./pages/components/scrollContainer/scrollContainer";
+
 export default function Home() {
+  useEffect(() => {
+    const documentContainer = document.getElementById("container");
+    if (documentContainer) {
+      documentContainer.scrollBy({
+        left: 1,
+      });
+      documentContainer.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        documentContainer.scrollBy({
+          left: event.deltaY < 0 ? -1 : 1,
+        });
+      });
+    }
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <section className="flex justify-center items-center">
-        <About />
-      </section>
-      <section>
+    <Container id="container">
+      <SectionTest>
         <Contact />
-      </section>
-      <section>
+      </SectionTest>
+      <SectionTest>
+        <About />
+      </SectionTest>
+      <SectionTest>
         <Portfolio />
-      </section>
-    </main>
+      </SectionTest>
+    </Container>
   );
 }
