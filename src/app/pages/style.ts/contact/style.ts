@@ -89,11 +89,11 @@ export const ContainerContact = styled.div`
     font-weight: 500;
     padding: 1rem 0rem;
     gap: 1rem;
-    width: 120%;
+    width: 125%;
     display: flex;
     flex-direction: column;
     :hover{
-        border: 1px solid #00c78b;
+        border: 3px solid #00c78b;
         background: #06694c;
     }
 `;
@@ -105,7 +105,7 @@ export const Button = styled.button`
     justify-items: center;
     padding: 0.8rem;
     border-radius: 10px;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
 
     
 `;
@@ -123,4 +123,8 @@ export const IconPhone = styled(Phone)`
 `;
 export const IconLocation =styled(Location)`
     ${iconContactStyles}
+`;
+export const ConstainerSocial = styled.div`
+margin-top: 3rem;
+color: white;
 `;

@@ -3,6 +3,7 @@ import Profile from "../assets/svg/juan.svg";
 import blurbox from "../assets/svg/blurblox.svg";
 import * as S from "../../app/pages/style.ts/about/style";
 import arrow from "../assets/svg/arrow.svg";
+import SocialNetwork from "./components/socialNetwork";
 
 export default function About() {
   return (
@@ -54,13 +55,7 @@ export default function About() {
               <a>Home</a>
               <a>Portfolio</a>
             </S.Menu>
-            <S.ContainerIcons>
-              <S.IconFacebook />
-              <S.IconInstagram />
-              <S.IconDiscord />
-              <S.IconTwitter />
-              <S.IconGithub />
-            </S.ContainerIcons>
+            <SocialNetwork />
           </S.ContainerFooter>
         </S.Box>
       </div>
