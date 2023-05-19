@@ -5,10 +5,17 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
 import React, { useState } from "react";
-
+import { createGlobalStyle } from "styled-components";
 import { Container, SectionTest } from "./pages/style.ts/style";
 import ScrollContainer from "./pages/components/scrollContainer/scrollContainer";
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+  body {
+    font-family: 'Poppins', sans-serif;
+    /* Outros estilos para o body */
+  }
+`;
 export default function Home() {
   useEffect(() => {
     const documentContainer = document.getElementById("container");
@@ -26,16 +33,19 @@ export default function Home() {
   }, []);
 
   return (
-    <Container id="container">
-      <SectionTest>
-        <Contact />
-      </SectionTest>
-      <SectionTest>
-        <About />
-      </SectionTest>
-      <SectionTest>
-        <Portfolio />
-      </SectionTest>
-    </Container>
+    <>
+      <GlobalStyle />
+      <Container id="container">
+        <SectionTest>
+          <Contact />
+        </SectionTest>
+        <SectionTest>
+          <About />
+        </SectionTest>
+        <SectionTest>
+          <Portfolio />
+        </SectionTest>
+      </Container>
+    </>
   );
 }
