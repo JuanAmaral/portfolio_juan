@@ -13,7 +13,7 @@ export const Container = styled.div`
         font-size: 5rem;
     }
 `;
-export const SectionTest = styled.section`
+export const SectionTest = styled.section<{bg?: string}>`
     display: flex;
     flex: none;
     /* scroll-margin-left: 100px; */
@@ -22,7 +22,8 @@ export const SectionTest = styled.section`
     scroll-snap-align: start;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(153.92deg, #111315 -4.51%, #050505 100.48%);
+    background: ${(props) => props.bg ? props.bg : "linear-gradient(153.92deg, #111315 -4.51%, #050505 100.48%)"}
+    
 
     
 `;

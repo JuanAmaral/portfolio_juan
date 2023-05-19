@@ -2,6 +2,8 @@ import Image from "next/image";
 import Profile from "../assets/svg/juan.svg";
 import blurbox from "../assets/svg/blurblox.svg";
 import * as S from "../../app/pages/style.ts/about/style";
+import arrow from "../assets/svg/arrow.svg";
+
 export default function About() {
   return (
     <S.Container>
@@ -11,6 +13,14 @@ export default function About() {
         </S.ContainerBlurBox>
         <S.Box>
           <S.ContainerMiddle>
+            <S.ContainerArrow>
+              <Image
+                src={arrow}
+                alt="arrow left"
+                width="30"
+                height="30"
+              ></Image>
+            </S.ContainerArrow>
             <div>
               <Image
                 src={Profile}
@@ -26,6 +36,16 @@ export default function About() {
               <a>C#, React/Next expert and</a>
               <a>technology enthusiast.</a>
             </S.ContainerText>
+            <S.ContainerArrow>
+              <Image
+                style={{ transform: "scaleX(-1)" }}
+                src={arrow}
+                alt="arrow right"
+                width="30"
+                height="30"
+                color="red"
+              ></Image>
+            </S.ContainerArrow>
           </S.ContainerMiddle>
           <S.ContainerFooter>
             <div>dev 🫡</div>

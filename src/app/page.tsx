@@ -36,7 +36,7 @@ export default function Home() {
     <>
       <GlobalStyle />
       <Container id="container">
-        <SectionTest>
+        <SectionTest bg="linear-gradient(29.42deg, #050505 9.39%, #111315 101.2%);">
           <Contact />
         </SectionTest>
         <SectionTest>

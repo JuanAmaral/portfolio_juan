@@ -1,23 +1,40 @@
 import Image from "next/image";
-
+import * as S from "../pages/style.ts/contact/style";
 export default function Contact() {
   return (
-    <main className="container bg-green-500 flex flex-col">
-      <div className=" w-[50%] flex flex-col p-2 bg-gradient-to-br from-[#0D0D0D] via-[#131315] to-transparent shadow-md rounded-[40px]">
-        <input></input>
-        <input></input>
-        <input></input>
-        <button>Send Mensage</button>
-      </div>
+    <S.Container>
+      <S.ContainerBox>
+        <S.Box>
+          <S.Input placeholder="Your name"></S.Input>
+          <S.Input placeholder="Your e-mail"></S.Input>
+          <S.Input placeholder="Your message"></S.Input>
+          <button>
+            <S.IconSendPlane />
+            {"Send Mensage"}
+          </button>
+        </S.Box>
 
-      <div>
-        <a>Let’s discuss on something cool together</a>
-        <div>
-          <button>contato@juanamaral.com.br</button>
-          <button>+55 62 99291 1658</button>
-          <button>In All world</button>
-        </div>
-      </div>
-    </main>
+        <S.BigTextBox>
+          <S.Text>
+            Let’s discuss on something{" "}
+            <S.Text colorText={"#00ffb2"}>cool</S.Text> together
+          </S.Text>
+          <S.ContainerContact>
+            <S.Button>
+              <S.IconEmail />
+              {"contato@juanamaral.com.br"}
+            </S.Button>
+            <S.Button>
+              <S.IconPhone />
+              {"+55 62 99291 1658"}
+            </S.Button>
+            <S.Button>
+              <S.IconLocation />
+              {"Brazil to all world"}
+            </S.Button>
+          </S.ContainerContact>
+        </S.BigTextBox>
+      </S.ContainerBox>
+    </S.Container>
   );
 }

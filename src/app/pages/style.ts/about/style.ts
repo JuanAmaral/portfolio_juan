@@ -19,6 +19,7 @@ export const ContainerBlurBox = styled.div`
 
 `;
 export const Box = styled.div`
+    border: 1px solid #2d2c2e;
     width: 100%;
     height: 80vh;
     max-height: 40rem;
@@ -42,6 +43,12 @@ export const ContainerMiddle = styled.div`
 export const ConImageText = styled.div`
     width: 100%;
 `;
+export const ContainerArrow = styled.div`
+    display:flex;
+    cursor:pointer;
+    
+`;
+
 export const ContainerText = styled.div`
     width: 50%;
     color: white;
