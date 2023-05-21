@@ -7,6 +7,7 @@ import {Facebook} from "@styled-icons/boxicons-logos/Facebook";
 import {Whatsapp} from "@styled-icons/boxicons-logos/Whatsapp"; 
 
 export const Container = styled.div`
+    margin-top: 2rem;
     width: 60%;
     position: relative;
 `; 
@@ -16,7 +17,7 @@ export const ContainerBlurBox = styled.div`
     margin-top: -2rem;
     left: -2rem;
     z-index: 1;
-
+    pointer-events: none;
 `;
 export const Box = styled.div`
     border: 1px solid #2d2c2e;
@@ -46,9 +47,10 @@ export const ConImageText = styled.div`
 export const ContainerArrow = styled.div`
     display:flex;
     cursor:pointer;
-    
 `;
-
+export const ContainerProfile = styled.div`
+    pointer-events: none;
+`;
 export const ContainerText = styled.div`
     width: 50%;
     color: white;
@@ -57,7 +59,7 @@ export const ContainerText = styled.div`
     align-items: start;
     justify-content: center;
     text-align: start;
-    a{
+    h3{
         font-size: 1rem;
     }
     p{
@@ -103,7 +105,6 @@ export const ContainerIcons = styled.div`
 const iconStyles = css`
   width: 1.8rem;
   height: 1.8rem;
-  
   cursor:pointer;
 `;
 
@@ -126,12 +127,3 @@ export const IconWhatsapp = styled(Whatsapp)`
   ${iconStyles}
 `;
 
-export const Copyright = styled.div`
-    margin-top: 1rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 0.7rem;
-    color: #cdcdcd;
-    
-`;

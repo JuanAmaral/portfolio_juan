@@ -4,6 +4,7 @@ import blurbox from "../assets/svg/blurblox.svg";
 import * as S from "../../app/pages/style.ts/about/style";
 import arrow from "../assets/svg/arrow.svg";
 import SocialNetwork from "./components/socialNetwork";
+import Copyright from "./components/copyright";
 
 export default function About() {
   return (
@@ -22,20 +23,20 @@ export default function About() {
                 height="30"
               ></Image>
             </S.ContainerArrow>
-            <div>
+            <S.ContainerProfile>
               <Image
                 src={Profile}
                 alt="profile picture"
                 width="500"
                 height="500"
               ></Image>
-            </div>
+            </S.ContainerProfile>
             <S.ContainerText>
               <h4>Hey, my name is</h4>
               <p>Juan Amaral</p>
-              <a>Front-End Developer. Unity, Java</a>
-              <a>C#, React/Next expert and</a>
-              <a>technology enthusiast.</a>
+              <h3>Front-End Developer. Unity, Java</h3>
+              <h3>C#, React/Next expert and</h3>
+              <h3>technology enthusiast.</h3>
             </S.ContainerText>
             <S.ContainerArrow>
               <Image
@@ -51,16 +52,16 @@ export default function About() {
           <S.ContainerFooter>
             <div>dev 🫡</div>
             <S.Menu>
-              <a>Contact</a>
-              <a>Home</a>
-              <a>Portfolio</a>
+              <h3>Contact</h3>
+              <h3>Home</h3>
+              <h3>Portfolio</h3>
             </S.Menu>
             <SocialNetwork />
           </S.ContainerFooter>
         </S.Box>
       </div>
 
-      <S.Copyright>Copyright © Juan Amaral. ‍All Rights Reserved.</S.Copyright>
+      <Copyright />
     </S.Container>
   );
 }

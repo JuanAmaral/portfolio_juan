@@ -1,4 +1,4 @@
-import * as S from "../../../pages/style.ts/socialNetwork/style";
+import * as S from "../../style.ts/components/socialNetwork/style";
 
 export default function socialNetwork() {
   return (

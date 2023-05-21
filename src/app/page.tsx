@@ -7,7 +7,7 @@ import Portfolio from "./pages/portfolio";
 import React, { useState } from "react";
 import { createGlobalStyle } from "styled-components";
 import { Container, SectionTest } from "./pages/style.ts/style";
-import ScrollContainer from "./pages/components/scrollContainer/scrollContainer";
+
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 

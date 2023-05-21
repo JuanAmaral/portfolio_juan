@@ -9,9 +9,10 @@ import {SendPlane} from "@styled-icons/remix-fill/SendPlane"
 import {Email} from '@styled-icons/material-rounded/Email';
 import {Phone} from '@styled-icons/boxicons-solid/Phone';
 import {Location} from '@styled-icons/fluentui-system-filled/Location';
+
 export const Container = styled.div`
     width: 60%;
-
+    margin-top: 2rem;
 `; 
 
 export const Box = styled.div` 

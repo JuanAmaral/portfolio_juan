@@ -1,6 +1,7 @@
 import Image from "next/image";
 import * as S from "../pages/style.ts/contact/style";
 import SocialNetwork from "./components/socialNetwork";
+import Copyright from "./components/copyright";
 export default function Contact() {
   return (
     <S.Container>
@@ -17,8 +18,8 @@ export default function Contact() {
 
         <S.BigTextBox>
           <S.Text>
-            Let’s discuss on something{" "}
-            <S.Text colorText={"#00c78b"}>cool</S.Text> together
+            {"Let’s"} <S.Text colorText={"#00c78b"}>{"create"}</S.Text>
+            {" something cool together"}
           </S.Text>
           <S.ContainerContact>
             <S.Button>
@@ -39,6 +40,7 @@ export default function Contact() {
           </S.ConstainerSocial>
         </S.BigTextBox>
       </S.ContainerBox>
+      <Copyright />
     </S.Container>
   );
 }

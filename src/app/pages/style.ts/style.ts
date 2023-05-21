@@ -1,13 +1,14 @@
 import styled from 'styled-components' 
 
 export const Container = styled.div`
+ 
   height: 100vh;
   scroll-snap-type: both mandatory;
   overflow-y: hidden;
   overflow-x: scroll;
   display: flex;
   scroll-behavior: smooth;
-  scroll-direction: horizontal;
+  /* scroll-direction: horizontal; */
     h1{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 5rem;
