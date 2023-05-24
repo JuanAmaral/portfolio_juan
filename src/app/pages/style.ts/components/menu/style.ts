@@ -16,4 +16,5 @@ export const Menu = styled.div`
 export const MenuItem = styled.h3<{isHighlighted : boolean}>`
 
   color: ${(props) => (props.isHighlighted ? '#5a32e9' : 'inherit')};
+  text-shadow: ${(props) => props.isHighlighted? "0px 0px 20px #6B47ED" : ""};
 `;

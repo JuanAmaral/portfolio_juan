@@ -8,33 +8,32 @@ export default function portfolio() {
     <S.Container>
       <S.Box>
         <S.BigContainerText>
-          <p>{"Portfolio"}</p>
-          <S.Text>
-            {"Let me take you"}
-            <S.Text colorText="#00c78b">{" further "}</S.Text>
-            <div />
-            {"than you’ve ever been."}
-          </S.Text>
-          <Menu selected={"portfolio"} />
-          <div>Contact Home Portfolio</div>
+          <div>
+            <p>{"Portfolio"}</p>
+            <S.Text>
+              {"Let me take you"}
+              <S.Text colorText="#00c78b">{" further "}</S.Text>
+              <div />
+              {"than you’ve ever been."}
+            </S.Text>
+          </div>
+          <S.ContainerMenu>
+            <Menu selected={"portfolio"} />
+          </S.ContainerMenu>
         </S.BigContainerText>
         <S.ContainerImages>
           <S.BoxInsideImages>
-            <Image src={portImage} width="300" height="150" alt="port" />
-            <Image src={portImage} width="300" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
           </S.BoxInsideImages>
           <S.BoxInsideImages>
-            <Image src={portImage} width="300" height="150" alt="port" />
-            <Image src={portImage} width="300" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
           </S.BoxInsideImages>{" "}
           <S.BoxInsideImages>
-            <Image src={portImage} width="300" height="150" alt="port" />
-            <Image src={portImage} width="300" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
+            <Image src={portImage} width="250" height="150" alt="port" />
           </S.BoxInsideImages>{" "}
-          <S.BoxInsideImages>
-            <Image src={portImage} width="300" height="150" alt="port" />
-            <Image src={portImage} width="300" height="150" alt="port" />
-          </S.BoxInsideImages>
         </S.ContainerImages>
       </S.Box>
     </S.Container>

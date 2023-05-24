@@ -42,7 +42,7 @@ export default function Home() {
         <SectionTest>
           <About />
         </SectionTest>
-        <SectionTest>
+        <SectionTest bg="linear-gradient(211.16deg, #111315 -1.36%, #050505 91.55%);">
           <Portfolio />
         </SectionTest>
       </Container>
