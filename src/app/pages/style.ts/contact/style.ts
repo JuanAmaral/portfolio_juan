@@ -26,6 +26,7 @@ export const Box = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     button{
         background-color: #00c78b;
         padding: 1rem;
@@ -128,4 +129,8 @@ export const IconLocation =styled(Location)`
 export const ConstainerSocial = styled.div`
 margin-top: 3rem;
 color: white;
+`;
+
+export const ContainerMenu = styled.div`
+    margin-top: 2rem;
 `;

@@ -5,8 +5,16 @@ import * as S from "../../app/pages/style.ts/about/style";
 import arrow from "../assets/svg/arrow.svg";
 import SocialNetwork from "./components/socialNetwork";
 import Copyright from "./components/copyright";
+import Menu from "./components/menu";
 
 export default function About() {
+  function goPage(page: number) {
+    const documentContainer = document.getElementById("container");
+    if (documentContainer) {
+      const scrollOffset = (page - 2) * 100;
+      documentContainer.scrollBy({ left: scrollOffset });
+    }
+  }
   return (
     <S.Container>
       <div>
@@ -15,7 +23,7 @@ export default function About() {
         </S.ContainerBlurBox>
         <S.Box>
           <S.ContainerMiddle>
-            <S.ContainerArrow>
+            <S.ContainerArrow onClick={() => goPage(1)}>
               <Image
                 src={arrow}
                 alt="arrow left"
@@ -38,7 +46,7 @@ export default function About() {
               <h3>C#, React/Next expert and</h3>
               <h3>technology enthusiast.</h3>
             </S.ContainerText>
-            <S.ContainerArrow>
+            <S.ContainerArrow onClick={() => goPage(3)}>
               <Image
                 style={{ transform: "scaleX(-1)" }}
                 src={arrow}
@@ -51,11 +59,7 @@ export default function About() {
           </S.ContainerMiddle>
           <S.ContainerFooter>
             <div>dev 🫡</div>
-            <S.Menu>
-              <h3>Contact</h3>
-              <h3>Home</h3>
-              <h3>Portfolio</h3>
-            </S.Menu>
+            <Menu selected={"home"} />
             <SocialNetwork />
           </S.ContainerFooter>
         </S.Box>

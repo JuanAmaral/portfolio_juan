@@ -1,6 +1,7 @@
 import Image from "next/image";
 import * as S from "../pages/style.ts/portfolio/style";
 import portImage from "../assets/images/IMG.png";
+import Menu from "./components/menu";
 
 export default function portfolio() {
   return (
@@ -14,6 +15,7 @@ export default function portfolio() {
             <div />
             {"than you’ve ever been."}
           </S.Text>
+          <Menu selected={"portfolio"} />
           <div>Contact Home Portfolio</div>
         </S.BigContainerText>
         <S.ContainerImages>

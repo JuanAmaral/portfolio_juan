@@ -14,6 +14,7 @@ export const StyledIcon = styled.div`
 
 export const ContainerIcons = styled.div`
     display: flex;
+    justify-content: flex-end;
     gap: 0.5rem;
     :hover {
         color: #5a32e9;

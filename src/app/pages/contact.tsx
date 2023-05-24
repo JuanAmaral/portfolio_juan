@@ -2,6 +2,7 @@ import Image from "next/image";
 import * as S from "../pages/style.ts/contact/style";
 import SocialNetwork from "./components/socialNetwork";
 import Copyright from "./components/copyright";
+import Menu from "./components/menu";
 export default function Contact() {
   return (
     <S.Container>
@@ -14,6 +15,9 @@ export default function Contact() {
             <S.IconSendPlane />
             {"Send Mensage"}
           </button>
+          <S.ContainerMenu>
+            <Menu selected={"contact"} />
+          </S.ContainerMenu>
         </S.Box>
 
         <S.BigTextBox>

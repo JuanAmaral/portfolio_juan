@@ -79,16 +79,11 @@ export const ContainerFooter = styled.div`
     padding: 1rem;
     font-size: 1rem;
     z-index: 2;
-`;
-export const Menu = styled.div`
-    gap: 1.8rem;
-    display: flex;
-    cursor: pointer;
-    :hover{
-        color: #5a32e9;
+    div{
+        width: calc(100% / 3);
     }
-
 `;
+
 export const StyledIcon = styled.div`
   color: red;
   font-size: 24px;
