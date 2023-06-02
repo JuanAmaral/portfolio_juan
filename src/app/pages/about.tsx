@@ -46,6 +46,7 @@ export default function About() {
               <h3>C#, React/Next expert and</h3>
               <h3>technology enthusiast.</h3>
             </S.ContainerText>
+
             <S.ContainerArrow onClick={() => goPage(3)}>
               <Image
                 style={{ transform: "scaleX(-1)" }}

@@ -39,6 +39,7 @@ export const ContainerMiddle = styled.div`
     align-items: row;
     margin-top: 2rem;
     z-index: 2;
+    width: 100%;
 `;
 
 export const ConImageText = styled.div`

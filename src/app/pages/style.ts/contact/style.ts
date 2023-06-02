@@ -108,14 +108,13 @@ export const Button = styled.button`
     padding: 0.8rem;
     border-radius: 10px;
     border: 3px solid transparent;
-
-    
 `;
 const iconContactStyles = css`
   width: 1.8rem;
   height: 1.8rem;
   color: #00c78b;
   cursor:pointer;
+ 
 `;
 export const IconEmail = styled(Email) `
     ${iconContactStyles}
