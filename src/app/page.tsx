@@ -61,6 +61,7 @@ export default function Home() {
           <ContainerMobile>
             <AboutMobile />
             <PortfolioMobile />
+            <ContactMobile />
           </ContainerMobile>
         </>
       )}

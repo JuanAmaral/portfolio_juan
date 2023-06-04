@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Copyright from "../components/copyright";
 import { dataPortfolioMobile } from "../components/Data/portfolioMobile";
 import ModalPortfolio from "../components/modalPortfolio";
+import SocialNetwork from "../components/socialNetwork";
 
 export default function PortfolioMobile() {
   const [openModal, setOpenModal] = useState<boolean>(false);

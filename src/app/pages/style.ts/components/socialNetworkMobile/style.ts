@@ -6,7 +6,7 @@ import {Twitter} from "@styled-icons/boxicons-logos/Twitter";
 import {Facebook} from "@styled-icons/boxicons-logos/Facebook";
 import {Whatsapp} from "@styled-icons/boxicons-logos/Whatsapp"; 
 import {LinkedinSquare} from "@styled-icons/boxicons-logos/LinkedinSquare";
-
+import {Phone} from '@styled-icons/boxicons-solid/Phone';
 
 export const StyledIcon = styled.div`
   color: red;
@@ -14,18 +14,21 @@ export const StyledIcon = styled.div`
 `;
 
 export const ContainerIcons = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
+  width: 100%;
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+    
     :hover {
         color: #5a32e9;
     }
 `;
 
 const iconStyles = css`
-  width: 1.7rem;
-  height: 1.7rem;
-  
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
   cursor:pointer;
 `;
 
@@ -49,5 +52,9 @@ export const IconWhatsapp = styled(Whatsapp)`
 `;
 export const IconLinkedinSquare = styled(LinkedinSquare)`
   ${iconStyles}
+`;
+export const IconPhone = styled(Phone)`
+  ${iconStyles}
+  color: #00c78b;
 `;
 

@@ -1,9 +1,9 @@
 "use client";
-import * as S from "../../style.ts/components/socialNetwork/style";
+import * as S from "../../style.ts/components/socialNetworkMobile/style";
 type SocialNetwork = {
   mobile?: boolean;
 };
-export default function SocialNetwork() {
+export default function SocialNetworkMobile() {
   return (
     <S.ContainerIcons>
       <S.IconGithub
@@ -21,6 +21,7 @@ export default function SocialNetwork() {
       <S.IconDiscord
         onClick={() => window.open("https://discord.gg/jt9ffsYt", "_blank")}
       />
+      <S.IconPhone href="+5562992911658" />
     </S.ContainerIcons>
   );
 }

@@ -28,9 +28,10 @@ export const BigContainerText = styled.div`
     text-align    : center;
 
     p{
-        color:white;
+        color:#00ffb2;
         font-size: 2.3rem;
         font-weight: 700;
+        text-shadow: 0px 0px 10px rgba(0, 255, 178, 0.4);
     }
 `;
 
@@ -55,7 +56,7 @@ export const ContainerImages = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: hidden;
 `;
 export const ContainerMenu = styled.div`
     /* margin-top: 15.5rem; */
