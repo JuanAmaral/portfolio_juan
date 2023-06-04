@@ -12,7 +12,8 @@ import {Location} from '@styled-icons/fluentui-system-filled/Location';
 
 export const Container = styled.div`
     width: 100%;
-    margin-top: 2rem;
+    height: 85vh;
+    margin-bottom: 2rem;
 `; 
 
 export const Box = styled.div` 

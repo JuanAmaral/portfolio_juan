@@ -20,7 +20,7 @@ export default function PortfolioMobile() {
   }
 
   return (
-    <S.Container>
+    <S.Container id="portfolio">
       <S.Box expand={expandList}>
         <S.BigContainerText>
           <div>

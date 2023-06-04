@@ -10,8 +10,6 @@ export const Menu = styled.div`
     :hover {
     color: #5a32e9;
   }
-    
-
 `;
 export const MenuItem = styled.h3<{isHighlighted : boolean}>`
 

@@ -11,7 +11,7 @@ import Menu from "../components/menu";
 
 export default function AboutMobile() {
   return (
-    <S.Container>
+    <S.Container id="home">
       <S.ContainerBlurBox>
         <Image src={blurbox} alt="blur" width="950" height="950" />
       </S.ContainerBlurBox>

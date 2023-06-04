@@ -15,6 +15,7 @@ import UseWindowSize from "./utils/useWindowSize";
 import AboutMobile from "./pages/mobile/about";
 import ContactMobile from "./pages/mobile/contact";
 import PortfolioMobile from "./pages/mobile/portfolio";
+import MenuMobile from "./pages/components/menuMobile";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -62,6 +63,7 @@ export default function Home() {
             <AboutMobile />
             <PortfolioMobile />
             <ContactMobile />
+            <MenuMobile />
           </ContainerMobile>
         </>
       )}

@@ -5,7 +5,7 @@ import Copyright from "../components/copyright";
 import Menu from "../components/menu";
 export default function ContactMobile() {
   return (
-    <S.Container>
+    <S.Container id="contact">
       <S.ContainerBox>
         <S.Box>
           <S.Text>
