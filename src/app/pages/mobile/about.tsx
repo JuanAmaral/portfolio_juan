@@ -25,7 +25,7 @@ export default function AboutMobile() {
             <Image
               src={juanmobile}
               alt="profile picture"
-              width={350}
+              width={300}
               height={350}
               style={{
                 width: "fit-content !important",

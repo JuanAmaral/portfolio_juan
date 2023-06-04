@@ -10,7 +10,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 `; 
 
 export const ContainerBlurBox = styled.div` 
@@ -39,6 +39,7 @@ export const ContainerMiddle = styled.div`
     flex-direction: column;
     z-index: 2;
     width: 100%;
+    margin-bottom: 0.5rem;
 `;
 
 export const ConImageText = styled.div`
@@ -62,9 +63,11 @@ export const ContainerText = styled.div`
     flex-direction: column;
     text-align: center;
     margin-top: 0.8rem;
+    margin-top: 1rem;
     h3{
         
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+
     }
     p{
         font-size: 2rem;

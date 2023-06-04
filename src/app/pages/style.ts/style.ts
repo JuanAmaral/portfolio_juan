@@ -18,7 +18,7 @@ export const Container = styled.div`
 export const ContainerMobile = styled.div`
     margin: 0%;
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     background: linear-gradient(153.92deg, #111315 -4.51%, #050505 100.48%);
 `;
 export const SectionTest = styled.section<{bg?: string}>`
