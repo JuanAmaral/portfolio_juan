@@ -21,7 +21,13 @@ export default function SocialNetworkMobile() {
       <S.IconDiscord
         onClick={() => window.open("https://discord.gg/jt9ffsYt", "_blank")}
       />
-      <S.IconPhone href="+5562992911658" />
+      <S.IconWhatsapp
+        onClick={() =>
+          window.open(
+            "https://wa.me/5562992911658?text=Hi%2C+I+see+you+portfolio%2C+let%27s+create+something%21%21"
+          )
+        }
+      />
     </S.ContainerIcons>
   );
 }

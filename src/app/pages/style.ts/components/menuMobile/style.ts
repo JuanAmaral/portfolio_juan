@@ -5,7 +5,7 @@ import { Contact } from '@styled-icons/boxicons-solid/Contact';
 import {SendPlane} from "@styled-icons/remix-fill/SendPlane"
 import { Mail } from '@styled-icons/fluentui-system-filled/Mail';
 import {FolderOpen} from '@styled-icons/ionicons-solid/FolderOpen';
-import {Whatsapp} from '@styled-icons/remix-fill/Whatsapp';
+import {Phone} from '@styled-icons/boxicons-solid/Phone';
 
 export const ContainerMenu = styled.div`
   width: 100%;
@@ -55,7 +55,7 @@ export const MenuItemBorder = styled.button<{active: boolean, idButton: number,s
     60% { transform: translate(0, -50%) rotate(-15deg); }
     65% { transform: translate(0, -40%) rotate(15deg); }
     70% { transform: translate(0, -15%) rotate(1.15, 0.75); }
-    100% { transform: translate(0, -10%) scale(1, 1); }
+    100% { transform: translate(0, 0) scale(1, 1); }
   }
   -webkit-tap-highlight-color: transparent;
 
@@ -79,6 +79,7 @@ export const IconContact = styled(Mail)`
  ${iconMenuStyle};
 `;
 
-export const IconWhatsapp = styled(Whatsapp)`
+export const IconPhone = styled(Phone)`
   ${iconMenuStyle};
+  color: #00c78b;
 `;

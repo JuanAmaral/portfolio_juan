@@ -50,17 +50,15 @@ export default function MenuMobile({ selected }: MenuType) {
       icon: <S.IconContact />,
     },
     {
-      Name: "whatsapp",
+      Name: "phone",
       id: 3,
-      icon: <S.IconWhatsapp />,
+      icon: <S.IconPhone />,
     },
   ];
 
   function funcButtons(name: string) {
-    if (name == "whatsapp") {
-      window.open(
-        "https://wa.me/5562992911658?text=Hi%2C+I+see+you+portfolio%2C+let%27s+create+something%21%21"
-      );
+    if (name == "phone") {
+      window.open("tel:+5562992911658");
     }
 
     goPage(name);

@@ -4,9 +4,8 @@ import {Github} from "@styled-icons/boxicons-logos/Github";
 import { Discord} from '@styled-icons/remix-fill/Discord';
 import {Twitter} from "@styled-icons/boxicons-logos/Twitter";
 import {Facebook} from "@styled-icons/boxicons-logos/Facebook";
-import {Whatsapp} from "@styled-icons/boxicons-logos/Whatsapp"; 
 import {LinkedinSquare} from "@styled-icons/boxicons-logos/LinkedinSquare";
-import {Phone} from '@styled-icons/boxicons-solid/Phone';
+import {Whatsapp} from '@styled-icons/remix-fill/Whatsapp';
 
 export const StyledIcon = styled.div`
   color: red;
@@ -47,13 +46,11 @@ export const IconTwitter = styled(Twitter)`
 export const IconGithub = styled(Github)`
   ${iconStyles}
 `;
-export const IconWhatsapp = styled(Whatsapp)`
-  ${iconStyles}
-`;
+
 export const IconLinkedinSquare = styled(LinkedinSquare)`
   ${iconStyles}
 `;
-export const IconPhone = styled(Phone)`
+export const IconWhatsapp = styled(Whatsapp)`
   ${iconStyles}
   color: #00c78b;
 `;
