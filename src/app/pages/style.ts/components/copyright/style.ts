@@ -2,7 +2,7 @@ import styled  from 'styled-components';
 
 
 export const Copyright = styled.div`
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: white;
     display: flex;
     justify-content: center;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Profile from "../../assets/svg/juan.svg";
-import Picture from "../../assets/svg/Picture.svg";
+import juanmobile from "../../assets/svg/juanmobile.svg";
 import blurbox from "../../assets/svg/blurblox.svg";
 import arrow from "../../assets/svg/arrow.svg";
 
@@ -23,10 +23,10 @@ export default function AboutMobile() {
           </S.ContainerText>
           <S.ContainerProfile>
             <Image
-              src={Picture}
+              src={juanmobile}
               alt="profile picture"
-              width={450}
-              height={450}
+              width={350}
+              height={350}
               style={{
                 width: "fit-content !important",
                 objectFit: "contain",

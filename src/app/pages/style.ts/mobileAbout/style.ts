@@ -17,7 +17,7 @@ export const ContainerBlurBox = styled.div`
     width: 100%;
     position:absolute;
     margin-top: 2rem;
-    left: -2rem;
+    left: 0rem;
     z-index: 1;
     pointer-events: none;
 `;
@@ -37,7 +37,6 @@ export const Box = styled.div`
 export const ContainerMiddle = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
     z-index: 2;
     width: 100%;
 `;
@@ -52,6 +51,8 @@ export const ContainerArrow = styled.div`
 export const ContainerProfile = styled.div`
     margin: 0rem;
     width: 100%;
+    justify-content: center;
+    display: flex;
 
 `;
 export const ContainerText = styled.div`
@@ -60,8 +61,10 @@ export const ContainerText = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 0.8rem;
     h3{
-        font-size: 1rem;
+        
+        font-size: 0.8rem;
     }
     p{
         font-size: 2rem;
