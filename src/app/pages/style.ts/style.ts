@@ -14,6 +14,13 @@ export const Container = styled.div`
         font-size: 5rem;
     }
 `;
+
+export const ContainerMobile = styled.div`
+    margin: 0%;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(153.92deg, #111315 -4.51%, #050505 100.48%);
+`;
 export const SectionTest = styled.section<{bg?: string}>`
     display: flex;
     flex: none;
@@ -24,7 +31,4 @@ export const SectionTest = styled.section<{bg?: string}>`
     width: 100vw;
     height: 100vh;
     background: ${(props) => props.bg ? props.bg : "linear-gradient(153.92deg, #111315 -4.51%, #050505 100.48%)"}
-    
-
-    
 `;
