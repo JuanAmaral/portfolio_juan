@@ -49,7 +49,7 @@ export default function PortfolioMobile() {
             </S.BoxInsideImages>
           ))}
         </S.ContainerImages>
-        {/* <S.Degrade /> */}
+        <S.Degrade />
         <S.ContainerButton onClick={() => setExpandList(!expandList)}>
           <S.ButtonMore>
             {expandList ? (
