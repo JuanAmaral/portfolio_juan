@@ -24,7 +24,7 @@ export const Menu = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.3rem;
 `;
 export const MenuItem = styled.h3<{isHighlighted : boolean}>`
   border-radius: 50%;
@@ -38,8 +38,8 @@ export const MenuItem = styled.h3<{isHighlighted : boolean}>`
 `;
 export const MenuItemBorder = styled.button<{active: boolean, idButton: number,selectedButton: number}>`
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,13 +58,12 @@ export const MenuItemBorder = styled.button<{active: boolean, idButton: number,s
     100% { transform: translate(0, 0) scale(1, 1); }
   }
   -webkit-tap-highlight-color: transparent;
-
 `;
 
 
 const iconMenuStyle = css`
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.9rem;
+  height: 1.9rem;
   color: white;
   cursor:pointer;
 `;
