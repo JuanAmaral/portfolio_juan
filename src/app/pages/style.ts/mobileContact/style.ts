@@ -43,7 +43,7 @@ export const Box = styled.div`
 export const ContainerBox = styled.div`
     width: 100%;
     max-height: 40rem;
-    max-width: 50rem;
+    /* max-width: 50rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;

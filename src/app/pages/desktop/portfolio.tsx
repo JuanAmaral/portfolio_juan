@@ -34,10 +34,10 @@ export default function Portfolio() {
             <Menu selected={"portfolio"} />
           </S.ContainerMenu>
         </S.BigContainerText>
-        <ModalPortfolio
+        {/* <ModalPortfolio
           project={dataPortfolio[0].project1}
           openModal={!openModal}
-        />
+        /> */}
 
         <S.ContainerImages>
           {dataPortfolio.map((value, index) => (
