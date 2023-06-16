@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import * as S from "../../pages/style.ts/portfolio/style";
-import portImage from "../../assets/images/IMG.png";
 import Menu from "../components/menu";
 import UseWindowSize from "../../utils/useWindowSize";
 import dynamic from "next/dynamic";
@@ -12,10 +11,11 @@ import ModalPortfolio from "../components/modalPortfolio";
 
 export default function Portfolio() {
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [idProjetct, setidProjetct] = useState<number>(0);
   const { width } = UseWindowSize();
-  function openModalPortfolio() {
-    setOpenModal(true);
-  }
+  const OnOpenModal = () => {
+    setOpenModal(false);
+  };
 
   return (
     <S.Container>
@@ -34,24 +34,21 @@ export default function Portfolio() {
             <Menu selected={"portfolio"} />
           </S.ContainerMenu>
         </S.BigContainerText>
-        {/* <ModalPortfolio
-          project={dataPortfolio[0].project1}
-          openModal={!openModal}
-        /> */}
 
+        <ModalPortfolio
+          project={dataPortfolio[idProjetct].project}
+          isOpenModal={openModal}
+          onCloseModal={OnOpenModal}
+        />
         <S.ContainerImages>
           {dataPortfolio.map((value, index) => (
             <S.BoxInsideImages key={index}>
               <Image
-                onClick={() => setOpenModal(!openModal)}
-                src={portImage}
-                width="300"
-                height="150"
-                alt="port"
-              />
-              <Image
-                onClick={() => setOpenModal(!openModal)}
-                src={portImage}
+                onClick={() => {
+                  setOpenModal(true);
+                  setidProjetct(value.project.id);
+                }}
+                src={value.project.imageNext}
                 width="300"
                 height="150"
                 alt="port"

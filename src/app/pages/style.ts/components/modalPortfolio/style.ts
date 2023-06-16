@@ -1,14 +1,17 @@
 import styled ,{css} from 'styled-components';
 
 
-export const Container = styled.div`
-    width: 100%;
+export const Container = styled.div<{showModal: boolean}>`
+    width: 120%;
+    left: -10rem;
+    top: -5rem;
+    height: 100vh;
     /* filter: blur(4px); */
     position: absolute;
     z-index: 999999999;
     justify-content: center;
     margin: 0rem;
-    display: flex;
+    display: ${(props) => props.showModal? "flex" : "none"};
     align-items: center;
 `; 
 

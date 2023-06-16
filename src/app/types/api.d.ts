@@ -3,7 +3,7 @@ declare interface IProject {
   title: string;
   description: string;
   linkURL?: string;
-  imageNext?: string | StaticImport;
+  imageNext?: StaticImageData; 
 }
 declare interface IProjects {
   project1?: IProject;
