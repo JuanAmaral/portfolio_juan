@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import * as S from "../style.ts/mobilePortfolio/style";
-import portImage from "../../assets/images/IMG.png";
+const portImage = require("../../assets/images/IMG.png");
 import Menu from "../components/menu";
 import UseWindowSize from "../../utils/useWindowSize";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import Copyright from "../components/copyright";
-import { dataPortfolioMobile } from "../components/Data/portfolioMobile";
+import { dataPortfolio } from "../components/Data/portfolio";
 import ModalPortfolio from "../components/modalPortfolio";
 import SocialNetwork from "../components/socialNetwork";
 
@@ -36,7 +36,7 @@ export default function PortfolioMobile() {
         </S.BigContainerText>
 
         <S.ContainerImages expand={expandList}>
-          {dataPortfolioMobile.map((value, index) => (
+          {dataPortfolio.map((value, index) => (
             <S.BoxInsideImages key={index}>
               <Image
                 onClick={() => setOpenModal(!openModal)}

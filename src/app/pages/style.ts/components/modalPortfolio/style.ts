@@ -4,7 +4,8 @@ import styled ,{css} from 'styled-components';
 export const Container = styled.div<{showModal: boolean}>`
     width: 120%;
     left: -10rem;
-    top: -5rem;
+    top: -18rem;
+
     height: 100vh;
     /* filter: blur(4px); */
     position: absolute;
@@ -13,6 +14,9 @@ export const Container = styled.div<{showModal: boolean}>`
     margin: 0rem;
     display: ${(props) => props.showModal? "flex" : "none"};
     align-items: center;
+    @media (max-width: 1920px) {
+      top: -10rem;
+    }
 `; 
 
 export const Box = styled.div`
@@ -45,16 +49,32 @@ export const Tittle = styled.p`
 `;
 export const Description = styled.h2`
   font-size: 1rem;
-  color: white;
+  color: white; 
+ 
+`;
+export const DescriptionEdit = styled.h2<{colorEdit?: string}>`
+  font-size: 1rem;
+  color: white; 
+  margin-top:1rem;
+  margin-bottom:0.5rem;
+  color: ${(props) => props.colorEdit ? props.colorEdit : "white"};
+`;
+export const ContainerDescription = styled.div`
+  display:flex;
+  flex-direction: row;
 `;
 export const Button = styled.div`
   color: white;
   border: 2px solid white;
 `;
 export const ContainerText = styled.div`
-  width: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-self: self-start;
   padding: 1rem 1rem 1rem 0rem;
   margin-top: -8rem;
+
 `;
 export const ContainerImage = styled.div`
   width: 100%;
@@ -68,4 +88,8 @@ export const ContainerImages = styled.div`
   flex-direction: column;
   align-items: flex-end;
   margin-top: -23rem;
+`;
+export const Divisor = styled.div`
+  border-bottom: 1px white solid;
+  width: 100%;
 `;

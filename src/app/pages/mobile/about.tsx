@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Profile from "../../assets/svg/juan.svg";
-import juanmobile from "../../assets/svg/juanmobile.svg";
-import blurbox from "../../assets/svg/blurblox.svg";
-import arrow from "../../assets/svg/arrow.svg";
+const Profile = require("../../assets/svg/juan.svg");
+const juanmobile = require("../../assets/svg/juanmobile.svg");
+const blurbox = require("../../assets/svg/blurblox.svg");
+const arrow = require("../../assets/svg/arrow.svg");
 
 import * as S from "../style.ts/mobileAbout/style";
 import SocialNetwork from "../components/socialNetwork";

@@ -16,52 +16,64 @@ export default function ModalPortfolio({ ...props }: MenuType) {
         showModal={props.isOpenModal}
         onClick={() => props.onCloseModal()}
       >
-        <S.Box>
-          <S.ContainerImage>
-            <Image
-              src={props.project.imageNext}
-              alt={"Imagem " + props.project.title}
-              width={600}
-              height={300}
-            ></Image>
-          </S.ContainerImage>
-          <S.ContainerImages>
-            <Image
-              src={props.project.imageNext}
-              alt={"Imagem " + props.project.title}
-              width={200}
-              height={100}
-            ></Image>
-            <Image
-              src={props.project.imageNext}
-              alt={"Imagem " + props.project.title}
-              width={200}
-              height={100}
-            ></Image>
-            <Image
-              src={props.project.imageNext}
-              alt={"Imagem " + props.project.title}
-              width={200}
-              height={100}
-            ></Image>
-            <Image
-              src={props.project.imageNext}
-              alt={"Imagem " + props.project.title}
-              width={200}
-              height={100}
-            ></Image>
-          </S.ContainerImages>
-          <S.ContainerText>
-            <S.DateString>{props.project.dateString}</S.DateString>
-            <S.Tittle>{props.project.title}</S.Tittle>
-            <S.Description>{props.project.description}</S.Description>
-            {props.project.linkURL && (
-              <S.Button onClick={() => window.open(props.project.linkURL)}>
-                Ir para o projeto
-              </S.Button>
-            )}
-          </S.ContainerText>
-        </S.Box>
+        {props.project.imageNext && (
+          <S.Box>
+            <S.ContainerImage>
+              <Image
+                src={props.project.imageNext}
+                alt={"Imagem " + props.project.title}
+                width={600}
+                height={300}
+              ></Image>
+            </S.ContainerImage>
+            <S.ContainerImages>
+              <Image
+                src={props.project.image2}
+                alt={"Imagem " + props.project.title}
+                width={200}
+                height={100}
+              ></Image>
+              <Image
+                src={props.project.image3}
+                alt={"Imagem " + props.project.title}
+                width={200}
+                height={100}
+              ></Image>
+              <Image
+                src={props.project.image4}
+                alt={"Imagem " + props.project.title}
+                width={200}
+                height={100}
+              ></Image>
+              <Image
+                src={props.project.image5}
+                alt={"Imagem " + props.project.title}
+                width={200}
+                height={100}
+              ></Image>
+            </S.ContainerImages>
+            <S.ContainerText>
+              <S.DateString>{props.project.dateString}</S.DateString>
+              <S.Tittle>{props.project.title}</S.Tittle>
+              <S.Description>{props.project.description}</S.Description>
+              {props.project.linkURL && (
+                <S.Button onClick={() => window.open(props.project.linkURL)}>
+                  Ir para o projeto
+                </S.Button>
+              )}
+              <S.ContainerDescription>
+                <S.DescriptionEdit>
+                  {props.project.typeProduct + "ㅤ"}
+                </S.DescriptionEdit>
+                <S.DescriptionEdit colorEdit="#00c78b">
+                  {props.project.tecnologies}
+                </S.DescriptionEdit>
+              </S.ContainerDescription>
+
+              <S.Divisor />
+            </S.ContainerText>
+          </S.Box>
+        )}
       </S.Container>
     </>
   );

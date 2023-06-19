@@ -7,3 +7,6 @@ declare global {
     blurDataURL?: string
   };
 }
+declare module '*.jpg';
+declare module '*.png';
+

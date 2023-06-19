@@ -14,6 +14,7 @@ export const Box = styled.div`
     border: 1px solid #2d2c2e;
     width: 100%;
     display:flex;
+    justify-content: space-between;
     flex-direction: row;
     padding: 1rem 5rem 1rem 5rem;
     height: 80vh;
@@ -41,7 +42,22 @@ export const Text = styled.a<{colorText?: string}>`
     font-weight: 600;
     color: ${(props) => props.colorText ? props.colorText : "white"};
 `;
-
+export const ContainerImages = styled.div`
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2,  1fr);
+    max-width: 38rem;
+    grid-gap: 0;
+    gap: 0rem;
+    width: 54%;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: center;
+    align-content: center;
+    align-items: start;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+`;
 export const BoxInsideImages = styled.div`
     display: flex;
     align-items: row;
@@ -51,20 +67,13 @@ export const BoxInsideImages = styled.div`
     width: 100%;
     .image {
         object-fit: contain;
+        min-width: 100%;
         width: 100% !important;
         position: relative !important;
         height: unset !important;
   }
 `;
-export const ContainerImages = styled.div`
-    display: flex;
-    width: 60%;
-    margin-top: 1rem;
-    flex-direction: column;
-    justify-items: flex-end;
-    align-items: flex-end;
-    overflow-y: scroll;
-`;
+
 export const ContainerMenu = styled.div`
     /* margin-top: 15.5rem; */
     color: white;
