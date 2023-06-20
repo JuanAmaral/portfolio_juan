@@ -15,6 +15,30 @@ const bingot3 = require("../../../assets/images/bingot/bingot3.jpg");
 const bingot4 = require("../../../assets/images/bingot/bingot4.jpg");
 const bingot5 = require("../../../assets/images/bingot/bingot5.jpg");
 
+const tryedu1 = require("../../../assets/images/tryedu/tryedu1.jpg");
+const tryedu2 = require("../../../assets/images/tryedu/tryedu2.jpg");
+const tryedu3 = require("../../../assets/images/tryedu/tryedu3.jpg");
+const tryedu4 = require("../../../assets/images/tryedu/tryedu4.jpg");
+const tryedu5 = require("../../../assets/images/tryedu/tryedu5.jpg");
+
+const umpraum1 = require("../../../assets/images/umpraum/umpraum1.jpg");
+const umpraum2 = require("../../../assets/images/umpraum/umpraum2.jpg");
+const umpraum3 = require("../../../assets/images/umpraum/umpraum3.jpg");
+const umpraum4 = require("../../../assets/images/umpraum/umpraum4.jpg");
+const umpraum5 = require("../../../assets/images/umpraum/umpraum5.jpg");
+
+const ecommerce1 = require("../../../assets/images/ecommerce/ecommerce1.jpg");
+const ecommerce2 = require("../../../assets/images/ecommerce/ecommerce2.jpg");
+const ecommerce3 = require("../../../assets/images/ecommerce/ecommerce3.jpg");
+const ecommerce4 = require("../../../assets/images/ecommerce/ecommerce4.png");
+const ecommerce5 = require("../../../assets/images/ecommerce/ecommerce5.png");
+
+const quina1 = require("../../../assets/images/quina/quina1.jpg");
+const quina2 = require("../../../assets/images/quina/quina2.jpg");
+const quina3 = require("../../../assets/images/quina/quina3.jpg");
+const quina4 = require("../../../assets/images/quina/quina4.jpg");
+const quina5 = require("../../../assets/images/quina/quina5.jpg");
+
 export const dataPortfolio = [
   {
     project: {
@@ -36,7 +60,7 @@ export const dataPortfolio = [
   {
     project: {
       id: 1,
-      dateString: "Nov, 2022",
+      dateString: "may, 2022",
       title: "BINGOT",
       description:
         "Online bingo game developed in conjunction with its management platform, allowing the modification of themes, winning sequences, and other currency and betting-related information.",
@@ -48,6 +72,74 @@ export const dataPortfolio = [
       image5: bingot5 as StaticImageData,
       typeProduct: "Website",
       tecnologies: "Typecript nextjs",
+    },
+  },
+  {
+    project: {
+      id: 2,
+      dateString: "out, 2022",
+      title: "TRYEDU",
+      description:
+        "Responsive video lessons platform with interactive quizzes where students and teachers interact. The student has gamified access to video lessons, questions, and activities, while the teacher can analyze the student's progress through statistics, provide feedback, and also has a teaching and improvement area.",
+      linkUrl: "",
+      imageNext: tryedu1 as StaticImageData,
+      image2: tryedu2 as StaticImageData,
+      image3: tryedu3 as StaticImageData,
+      image4: tryedu4 as StaticImageData,
+      image5: tryedu5 as StaticImageData,
+      typeProduct: "Website and app",
+      tecnologies: "Typecript nextjs reactjs and native",
+    },
+  },
+  {
+    project: {
+      id: 3,
+      dateString: "july, 2022",
+      title: "One for one",
+      description:
+        "Responsive and interactive website with 3D elements, developed for the largest football fair in Brazil to showcase the gameplay of the game 'One for One', featuring partnerships with 'Luva de Pedreiro' and 'Falcão'",
+      linkUrl: "",
+      imageNext: umpraum1 as StaticImageData,
+      image2: umpraum2 as StaticImageData,
+      image3: umpraum3 as StaticImageData,
+      image4: umpraum4 as StaticImageData,
+      image5: umpraum5 as StaticImageData,
+      typeProduct: "Website",
+      tecnologies: "Typecript reactjs spline",
+    },
+  },
+  {
+    project: {
+      id: 4,
+      dateString: "out, 2022",
+      title: "E-commerce One for One",
+      description:
+        "Responsive e-commerce developed for the sale of packages for the game One for One, featuring an authentication system, password recovery (via email and SMS), and purchases using bank transfers (PIX) and credit cards.",
+      linkUrl: "",
+      imageNext: ecommerce1 as StaticImageData,
+      image2: ecommerce2 as StaticImageData,
+      image3: ecommerce3 as StaticImageData,
+      image4: ecommerce4 as StaticImageData,
+      image5: ecommerce5 as StaticImageData,
+      typeProduct: "Website",
+      tecnologies: "Typecript reactjs",
+    },
+  },
+  {
+    project: {
+      id: 5,
+      dateString: "out, 2022",
+      title: "QUINA",
+      description:
+        "Platform developed in partnership with credit card machines for real-time and up-to-date horse racing results integration into the system, featuring authentication, prize validation, and even statistics.",
+      linkUrl: "",
+      imageNext: quina1 as StaticImageData,
+      image2: quina2 as StaticImageData,
+      image3: quina3 as StaticImageData,
+      image4: quina4 as StaticImageData,
+      image5: quina5 as StaticImageData,
+      typeProduct: "Website",
+      tecnologies: "Typecript reactJs",
     },
   },
 ];

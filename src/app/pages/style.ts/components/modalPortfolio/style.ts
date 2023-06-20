@@ -23,7 +23,7 @@ export const Box = styled.div`
     border: 1px solid #2d2c2e;
     width: 100%;
     max-width: 53rem;
-    max-height: 40rem;
+    max-height: 43rem;
     background: linear-gradient(130.64deg, #0D0D0D 13.08%, #131315 74.27%);
     box-shadow: -12px -12px 20px rgba(18, 18, 18, 0.8), 10px 10px 24px rgba(0, 0, 0, 0.7);
     border-radius: 40px;
