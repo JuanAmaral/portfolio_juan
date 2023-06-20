@@ -80,7 +80,7 @@ export const dataPortfolio = [
       dateString: "out, 2022",
       title: "TRYEDU",
       description:
-        "Responsive video lessons platform with interactive quizzes where students and teachers interact. The student has gamified access to video lessons, questions, and activities, while the teacher can analyze the student's progress through statistics, provide feedback, and also has a teaching and improvement area.",
+        "Interactive educational platform where students can respond to multiple quizzes inside a 3D school. Teachers can access the log to analyze the student's progress through statistics and provide feedback. There's also a teacher's area, with numerous resources so they can improve didatics and teaching techniques.",
       linkUrl: "",
       imageNext: tryedu1 as StaticImageData,
       image2: tryedu2 as StaticImageData,
@@ -128,7 +128,7 @@ export const dataPortfolio = [
   {
     project: {
       id: 5,
-      dateString: "out, 2022",
+      dateString: "nov, 2021",
       title: "QUINA",
       description:
         "Platform developed in partnership with credit card machines for real-time and up-to-date horse racing results integration into the system, featuring authentication, prize validation, and even statistics.",
