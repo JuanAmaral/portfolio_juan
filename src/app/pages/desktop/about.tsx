@@ -7,15 +7,9 @@ import * as S from "../style.ts/about/style";
 import SocialNetwork from "../components/socialNetwork";
 import Copyright from "../components/copyright";
 import Menu from "../components/menu";
+import { goPage } from "@/app/utils/navigatePages";
 
 export default function About() {
-  function goPage(page: number) {
-    const documentContainer = document.getElementById("container");
-    if (documentContainer) {
-      const scrollOffset = (page - 2) * 100;
-      documentContainer.scrollBy({ left: scrollOffset });
-    }
-  }
   return (
     <S.Container>
       <div>
@@ -55,7 +49,6 @@ export default function About() {
                 alt="arrow right"
                 width="30"
                 height="30"
-                color="red"
               ></Image>
             </S.ContainerArrow>
           </S.ContainerMiddle>

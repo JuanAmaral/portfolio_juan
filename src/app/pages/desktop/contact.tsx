@@ -3,6 +3,9 @@ import * as S from "../../pages/style.ts/contact/style";
 import SocialNetwork from "../components/socialNetwork";
 import Copyright from "../components/copyright";
 import Menu from "../components/menu";
+import { goPage } from "@/app/utils/navigatePages";
+const arrow = require("../../assets/svg/arrow.svg");
+
 export default function Contact() {
   return (
     <S.Container>
@@ -39,11 +42,22 @@ export default function Contact() {
               {"Brazil to the whole world"}
             </S.Button>
           </S.ContainerContact>
+
           <S.ConstainerSocial>
             <SocialNetwork />
           </S.ConstainerSocial>
         </S.BigTextBox>
+        <S.ContainerArrow onClick={() => goPage(3)}>
+          <Image
+            style={{ transform: "scaleX(-1)" }}
+            src={arrow}
+            alt="arrow right"
+            width="30"
+            height="30"
+          ></Image>
+        </S.ContainerArrow>
       </S.ContainerBox>
+
       <Copyright />
     </S.Container>
   );

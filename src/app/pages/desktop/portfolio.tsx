@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import Copyright from "../components/copyright";
 import { dataPortfolio } from "../components/Data/portfolio";
 import ModalPortfolio from "../components/modalPortfolio";
+import { goPage } from "@/app/utils/navigatePages";
+const arrow = require("../../assets/svg/arrow.svg");
 
 export default function Portfolio() {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -20,6 +22,9 @@ export default function Portfolio() {
   return (
     <S.Container>
       <S.Box>
+        <S.ContainerArrow onClick={() => goPage(1)}>
+          <Image src={arrow} alt="arrow left" width="30" height="30"></Image>
+        </S.ContainerArrow>
         <S.BigContainerText>
           <div>
             <p>{"Portfolio"}</p>

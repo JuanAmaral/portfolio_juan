@@ -133,3 +133,8 @@ color: white;
 export const ContainerMenu = styled.div`
     margin-top: 2rem;
 `;
+
+export const ContainerArrow = styled.div`
+    display:flex;
+    cursor:pointer;
+`;

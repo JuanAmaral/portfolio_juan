@@ -64,6 +64,7 @@ export const BoxInsideImages = styled.div`
     justify-items: flex-end;
     align-items: flex-end;
     justify-content: flex-end;
+    cursor: pointer;
     width: 100%;
     .image {
         object-fit: contain;
@@ -71,10 +72,17 @@ export const BoxInsideImages = styled.div`
         width: 100% !important;
         position: relative !important;
         height: unset !important;
-  }
+     }
+     :hover{
+        opacity: 0.6;
+     }
 `;
 
 export const ContainerMenu = styled.div`
     /* margin-top: 15.5rem; */
     color: white;
 ` ;
+export const ContainerArrow = styled.div`
+    display:flex;
+    cursor:pointer;
+`;

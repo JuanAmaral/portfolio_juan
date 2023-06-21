@@ -97,7 +97,7 @@ export const dataPortfolio = [
       dateString: "july, 2022",
       title: "One for one",
       description:
-        "Responsive and interactive website with 3D elements, developed for the largest football fair in Brazil to showcase the gameplay of the game 'One for One', featuring partnerships with 'Luva de Pedreiro' and 'Falcão'",
+        "Responsive and interactive website with 3D elements, developed for the largest football fair in Brazil to showcase the gameplay of the game 'One for One',featuring partnership with the brazilian internet influencer 'Luva de Pedreiro' and the brazilian futsal star 'Falcão'. ",
       linkUrl: "",
       imageNext: umpraum1 as StaticImageData,
       image2: umpraum2 as StaticImageData,
