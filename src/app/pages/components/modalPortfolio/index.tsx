@@ -8,7 +8,10 @@ type MenuType = {
   isOpenModal: boolean;
   onCloseModal: () => void;
 };
-
+const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  e.stopPropagation();
+  e.nativeEvent.stopImmediatePropagation();
+};
 export default function ModalPortfolio({ ...props }: MenuType) {
   return (
     <>
@@ -17,7 +20,7 @@ export default function ModalPortfolio({ ...props }: MenuType) {
         onClick={() => props.onCloseModal()}
       >
         {props.project.imageNext && (
-          <S.Box>
+          <S.Box onClick={() => handleClick}>
             <S.ContainerImage>
               <Image
                 src={props.project.imageNext}

@@ -2,12 +2,11 @@ import styled ,{css} from 'styled-components';
 
 
 export const Container = styled.div<{showModal: boolean}>`
-    width: 120%;
-    left: -10rem;
-    top: -18rem;
-    height: 100vh;
+    width: 100%;
+    height: 120vh;
     /* filter: blur(4px); */
-    position: absolute;
+    position: fixed;
+    left: 0rem;
     z-index: 999999999;
     justify-content: center;
     margin: 0rem;
@@ -21,7 +20,7 @@ export const Container = styled.div<{showModal: boolean}>`
 
 export const Box = styled.div`
     border: 1px solid #2d2c2e;
-    width: 100%;
+    width: 90%;
     max-width: 53rem;
     max-height: 43rem;
     background: linear-gradient(130.64deg, #0D0D0D 13.08%, #131315 74.27%);
@@ -43,7 +42,7 @@ export const DateString = styled.h4`
   font-size: 0.8rem;
 `;
 export const Tittle = styled.p`
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
   font-weight: 700;
 `;
@@ -68,13 +67,11 @@ export const Button = styled.div`
   border: 2px solid white;
 `;
 export const ContainerText = styled.div`
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-self: self-start;
   padding: 1rem 1rem 1rem 0rem;
-  margin-top: -8rem;
-
 `;
 export const ContainerImage = styled.div`
   width: 100%;
@@ -92,4 +89,21 @@ export const ContainerImages = styled.div`
 export const Divisor = styled.div`
   border-bottom: 1px white solid;
   width: 100%;
+`;
+
+export const SlideButton = styled.div<{selected?: boolean}>`
+  border-radius: 50%;
+  background: ${(props) => props.selected ? "#03ac79" : "#d9d9d9"};
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+`;
+export const ContainerButton = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  
+
 `;

@@ -37,7 +37,7 @@ export default function About() {
             <S.ContainerText>
               <h4>Hey, my name is</h4>
               <p>Juan Amaral</p>
-              <h3>Front-End Developer. Unity, Java</h3>
+              <h3>Front-End Developer. Unity, Java, </h3>
               <h3>C#, React/Next expert and</h3>
               <h3>technology enthusiast.</h3>
             </S.ContainerText>

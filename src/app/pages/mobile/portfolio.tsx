@@ -8,16 +8,18 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import Copyright from "../components/copyright";
 import { dataPortfolio } from "../components/Data/portfolio";
-import ModalPortfolio from "../components/modalPortfolio";
+import ModalPortfolioMobile from "../components/modalPortfolioMobile";
 import SocialNetwork from "../components/socialNetwork";
 
 export default function PortfolioMobile() {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [expandList, setExpandList] = useState<boolean>(false);
+  const [idProjetct, setidProjetct] = useState<number>(0);
+
   const { width } = UseWindowSize();
-  function openModalPortfolio() {
-    setOpenModal(true);
-  }
+  const OnOpenModal = () => {
+    setOpenModal(false);
+  };
 
   return (
     <S.Container id="portfolio">
@@ -34,15 +36,22 @@ export default function PortfolioMobile() {
             {"you’ve ever been."}
           </S.Text>
         </S.BigContainerText>
-
+        <ModalPortfolioMobile
+          project={dataPortfolio[idProjetct].project}
+          isOpenModal={openModal}
+          onCloseModal={OnOpenModal}
+        />
         <S.ContainerImages expand={expandList}>
           {dataPortfolio.map((value, index) => (
             <S.BoxInsideImages key={index}>
               <Image
-                onClick={() => setOpenModal(!openModal)}
-                src={portImage}
-                width="0"
-                height="0"
+                onClick={() => {
+                  setOpenModal(true);
+                  setidProjetct(value.project.id);
+                }}
+                src={value.project.imageNext}
+                width="300"
+                height="200"
                 alt="port"
                 style={{ width: "100%", height: "auto" }}
               />

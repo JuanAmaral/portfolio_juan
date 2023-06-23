@@ -137,4 +137,6 @@ export const ContainerMenu = styled.div`
 export const ContainerArrow = styled.div`
     display:flex;
     cursor:pointer;
+    margin-left: 2rem;
+    min-width: 1.8rem;
 `;

@@ -43,6 +43,7 @@ export const Text = styled.a<{colorText?: string}>`
 `;
 
 export const BoxInsideImages = styled.div`
+    cursor: pointer;
     .image {
         object-fit: contain;
         width: 100% !important;
