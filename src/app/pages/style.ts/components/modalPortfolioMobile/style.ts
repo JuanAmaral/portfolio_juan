@@ -76,6 +76,7 @@ export const ContainerText = styled.div`
 export const ContainerImage = styled.div`
   width: 100%;
   display: flex;
+  justify-content: center;
 `;
 export const ContainerImages = styled.div`
   width: 100%;

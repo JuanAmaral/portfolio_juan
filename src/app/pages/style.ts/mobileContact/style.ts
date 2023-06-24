@@ -16,7 +16,7 @@ export const Container = styled.div`
     margin-bottom: 2rem;
 `; 
 
-export const Box = styled.div` 
+export const BoxForm = styled.form` 
     width: 100%;
     padding: 2rem;
     background: linear-gradient(130.64deg, #0D0D0D 13.08%, #131315 74.27%);
@@ -63,13 +63,30 @@ export const Input = styled.input`
     width: 100%;
     margin-top: 3rem;
     font-size: 1rem;
-    line-height:2em;
+    line-height:2rem;
+    resize: vertical;
     &:focus{
         outline: none;
         caret-color: #00ffb2;
         border-bottom: 2px solid #00ffb2;
     }
 
+`;
+export const Textarea = styled.textarea`
+     border-bottom: 2px solid #9ca3af;
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height:2em;
+    
+    resize: vertical;
+    &:focus{
+        outline: none;
+        caret-color: #00ffb2;
+        border-bottom: 2px solid #00ffb2;
+    }
 `;
 
 export const IconSendPlane = styled(SendPlane)`

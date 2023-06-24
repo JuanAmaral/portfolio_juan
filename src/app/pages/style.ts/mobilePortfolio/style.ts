@@ -62,7 +62,7 @@ export const ContainerImages = styled.div<{expand: boolean}>`
 `;
 export const Degrade = styled.div`
     background: linear-gradient(360deg, #0b0c0d 0%, #0b0c0d 0.05%, rgba(0, 0, 0, 0.13) 68.68%, rgba(0, 0, 0, 0) 100%);
-    z-index: 999999;
+    z-index: 2;
     height: 10rem;
     margin-top: -4.7rem;
 `; 

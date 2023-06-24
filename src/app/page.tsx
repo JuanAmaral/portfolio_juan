@@ -16,6 +16,8 @@ import AboutMobile from "./pages/mobile/about";
 import ContactMobile from "./pages/mobile/contact";
 import PortfolioMobile from "./pages/mobile/portfolio";
 import MenuMobile from "./pages/components/menuMobile";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -44,6 +46,17 @@ export default function Home() {
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+      {/* Same as */}
+
       <GlobalStyle />
       {width > 1024 ? (
         <Container id="container">
@@ -67,6 +80,7 @@ export default function Home() {
           </ContainerMobile>
         </>
       )}
+      <ToastContainer />
     </>
   );
 }

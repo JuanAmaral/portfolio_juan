@@ -26,6 +26,7 @@ export default function ModalPortfolioMobile({ ...props }: MenuType) {
     event: React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLElement>
   ) {
     if (event.target === event.currentTarget) {
+      setselectedImage(0);
       props.onCloseModal();
     }
   }

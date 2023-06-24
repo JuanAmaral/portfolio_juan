@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin-top: 2rem;
 `; 
 
-export const Box = styled.div` 
+export const BoxForm = styled.form` 
     width: 50%;
     padding: 3rem;
     background: blue;
@@ -76,6 +76,21 @@ export const Input = styled.input`
         border-bottom: 2px solid #00ffb2;
     }
 
+`;
+export const Textarea = styled.textarea`
+     border-bottom: 2px solid #9ca3af;
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height:2em;
+    resize: vertical;
+    &:focus{
+        outline: none;
+        caret-color: #00ffb2;
+        border-bottom: 2px solid #00ffb2;
+    }
 `;
 
 export const IconSendPlane = styled(SendPlane)`
