@@ -50,13 +50,15 @@ export const ContainerImages = styled.div`
     grid-gap: 0;
     gap: 0rem;
     width: 54%;
+    /* height: 20rem; */
     flex-direction: row;
-    justify-content: start;
-    justify-items: center;
-    align-content: center;
+    /* justify-content: start; */
+    /* justify-items: center; */
     align-items: start;
     overflow-y: scroll;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    
+
 `;
 export const BoxInsideImages = styled.div`
     display: flex;

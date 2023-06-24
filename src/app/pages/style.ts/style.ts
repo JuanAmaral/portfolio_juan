@@ -1,11 +1,12 @@
 import styled from 'styled-components' 
 
 export const Container = styled.div`
- 
   height: 100vh;
   scroll-snap-type: both mandatory;
   overflow-y: hidden;
   overflow-x: scroll;
+ 
+ 
   display: flex;
   scroll-behavior: smooth;
   /* scroll-direction: horizontal; */
@@ -14,7 +15,9 @@ export const Container = styled.div`
         font-size: 5rem;
     }
 `;
-
+export const ContainerRotate = styled.div`
+transform: rotate(90deg);
+`;
 export const ContainerMobile = styled.div`
     margin: 0%;
     width: 100%;
@@ -24,6 +27,7 @@ export const ContainerMobile = styled.div`
 export const SectionTest = styled.section<{bg?: string}>`
     display: flex;
     flex: none;
+
     /* scroll-margin-left: 100px; */
     justify-content: center;
     align-items: center;

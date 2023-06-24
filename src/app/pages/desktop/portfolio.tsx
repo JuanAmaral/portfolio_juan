@@ -11,10 +11,13 @@ import ModalPortfolio from "../components/modalPortfolio";
 import { goPage } from "@/app/utils/navigatePages";
 const arrow = require("../../assets/svg/arrow.svg");
 
-export default function Portfolio() {
+type PortfolioType = {
+  onFocusEnterPortfolio: () => void;
+  onFocusLeavePortfolio: () => void;
+};
+export default function Portfolio({ ...props }: PortfolioType) {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [idProjetct, setidProjetct] = useState<number>(0);
-  const { width } = UseWindowSize();
   const OnOpenModal = () => {
     setOpenModal(false);
   };
@@ -45,7 +48,11 @@ export default function Portfolio() {
           isOpenModal={openModal}
           onCloseModal={OnOpenModal}
         />
-        <S.ContainerImages>
+        <S.ContainerImages
+          id="containerImage"
+          onMouseLeave={props.onFocusLeavePortfolio}
+          onMouseEnter={props.onFocusEnterPortfolio}
+        >
           {dataPortfolio.map((value, index) => (
             <S.BoxInsideImages key={index}>
               <Image

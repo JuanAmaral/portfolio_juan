@@ -10,6 +10,7 @@ import {
   Container,
   ContainerMobile,
   SectionTest,
+  ContainerRotate,
 } from "./pages/style.ts/style";
 import UseWindowSize from "./utils/useWindowSize";
 import AboutMobile from "./pages/mobile/about";
@@ -29,21 +30,55 @@ const GlobalStyle = createGlobalStyle`
 `;
 export default function Home() {
   const { width } = UseWindowSize();
+  const [enterRegionMouse, setEnterRegionMouse] = useState<boolean>();
+  const [passOneTime, setPassOneTime] = useState<boolean>();
   useEffect(() => {
     const documentContainer = document.getElementById("container");
-    if (documentContainer) {
+    const documentContainerImage = document.getElementById("containerImage");
+
+    if (documentContainer && documentContainerImage) {
       documentContainer.scrollBy({
         left: 1,
       });
+      console.log("devo mover");
+
       documentContainer.addEventListener("wheel", (event) => {
         event.preventDefault();
         documentContainer.scrollBy({
-          left: event.deltaY < 0 ? -1 : 1,
+          left: !enterRegionMouse ? (event.deltaY < 0 ? -1 : 1) : 0,
+          top: 0,
         });
       });
-    }
-  }, [width]);
 
+      documentContainerImage.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        documentContainerImage.scrollBy({
+          left: 0,
+          top: event.deltaY < 0 ? -10 : 10,
+        });
+      });
+      setPassOneTime(true);
+    }
+  }, [width, enterRegionMouse]);
+
+  const scrollDocumentContainer = (event: WheelEvent): void => {
+    event.preventDefault();
+    const documentContainer = document.getElementById("container");
+    if (documentContainer) {
+      documentContainer.scrollBy({
+        left: event.deltaY < 0 ? -1 : 1,
+      });
+    }
+  };
+
+  function EnterRegion() {
+    setEnterRegionMouse(true);
+    console.log("enter");
+  }
+  function LeaveRegion() {
+    setEnterRegionMouse(false);
+    console.log("leave");
+  }
   return (
     <>
       <ToastContainer
@@ -67,7 +102,10 @@ export default function Home() {
             <About />
           </SectionTest>
           <SectionTest bg="linear-gradient(211.16deg, #111315 -1.36%, #050505 91.55%);">
-            <Portfolio />
+            <Portfolio
+              onFocusLeavePortfolio={LeaveRegion}
+              onFocusEnterPortfolio={EnterRegion}
+            />
           </SectionTest>
         </Container>
       ) : (

@@ -142,4 +142,38 @@ export const dataPortfolio = [
       tecnologies: "Typecript reactJs",
     },
   },
+  {
+    project: {
+      id: 5,
+      dateString: "nov, 2021",
+      title: "QUINA",
+      description:
+        "Platform developed in partnership with credit card machines for real-time and up-to-date horse racing results integration into the system, featuring authentication, prize validation, and even statistics.",
+      linkUrl: "",
+      imageNext: quina1 as StaticImageData,
+      image2: quina2 as StaticImageData,
+      image3: quina3 as StaticImageData,
+      image4: quina4 as StaticImageData,
+      image5: quina5 as StaticImageData,
+      typeProduct: "Website",
+      tecnologies: "Typecript reactJs",
+    },
+  },
+  {
+    project: {
+      id: 5,
+      dateString: "nov, 2021",
+      title: "QUINA",
+      description:
+        "Platform developed in partnership with credit card machines for real-time and up-to-date horse racing results integration into the system, featuring authentication, prize validation, and even statistics.",
+      linkUrl: "",
+      imageNext: quina1 as StaticImageData,
+      image2: quina2 as StaticImageData,
+      image3: quina3 as StaticImageData,
+      image4: quina4 as StaticImageData,
+      image5: quina5 as StaticImageData,
+      typeProduct: "Website",
+      tecnologies: "Typecript reactJs",
+    },
+  },
 ];
