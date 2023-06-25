@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 export default function Home() {
   const { width } = UseWindowSize();
   const [enterRegionMouse, setEnterRegionMouse] = useState<boolean>();
-  const [passOneTime, setPassOneTime] = useState<boolean>();
+  const [passOneTime, setPassOneTime] = useState<bool>();
   useEffect(() => {
     const documentContainer = document.getElementById("container");
     const documentContainerImage = document.getElementById("containerImage");
@@ -54,7 +54,8 @@ export default function Home() {
         event.preventDefault();
         documentContainerImage.scrollBy({
           left: 0,
-          top: event.deltaY < 0 ? -10 : 10,
+          top:
+            event.deltaY < 0 ? (!passOneTime ? -20 : 0) : !passOneTime ? 20 : 0,
         });
       });
       setPassOneTime(true);
