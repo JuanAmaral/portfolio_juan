@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 export default function Home() {
   const { width } = UseWindowSize();
   const [enterRegionMouse, setEnterRegionMouse] = useState<boolean>();
-  const [passOneTime, setPassOneTime] = useState<bool>();
+  const [passOneTime, setPassOneTime] = useState<boolean>();
   useEffect(() => {
     const documentContainer = document.getElementById("container");
     const documentContainerImage = document.getElementById("containerImage");
