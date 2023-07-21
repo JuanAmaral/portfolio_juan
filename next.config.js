@@ -6,17 +6,14 @@ const withPlugins = require("next-compose-plugins");
 
 const nextConfig = {
   reactStrictMode: true,
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  },
   images: {
     disableStaticImages: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: "/manifest.webmanifest",
-        destination: "/api/manifest",
-      },
-    ];
-  },
+  
 };
 
 module.exports = withPlugins([withImages], nextConfig);

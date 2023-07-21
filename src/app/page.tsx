@@ -40,7 +40,6 @@ export default function Home() {
       documentContainer.scrollBy({
         left: 1,
       });
-      console.log("devo mover");
 
       documentContainer.addEventListener("wheel", (event) => {
         event.preventDefault();
@@ -74,11 +73,9 @@ export default function Home() {
 
   function EnterRegion() {
     setEnterRegionMouse(true);
-    console.log("enter");
   }
   function LeaveRegion() {
     setEnterRegionMouse(false);
-    console.log("leave");
   }
   return (
     <>

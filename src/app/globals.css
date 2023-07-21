@@ -42,7 +42,7 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #131314;
+  background: #0d0f14;
   height: 2px; 
   border-radius: 10px;
 }

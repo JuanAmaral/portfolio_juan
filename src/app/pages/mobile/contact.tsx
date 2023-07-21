@@ -41,8 +41,6 @@ export default function ContactMobile() {
           style: { background: "#0a0b0c", color: "#00c78b" },
           toastId: customId,
         });
-
-        console.log("SUCCESS!", response.status, response.text);
       } catch (error) {
         toast.error("Failed, check your message.", {
           position: "top-right",

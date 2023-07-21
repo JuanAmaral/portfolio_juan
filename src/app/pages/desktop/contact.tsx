@@ -46,8 +46,6 @@ export default function Contact() {
           toastId: customId,
         });
         form.current.reset();
-
-        console.log("SUCCESS!", response.status, response.text);
       } catch (error) {
         toast.error("Failed, check your message.", {
           position: "top-right",
