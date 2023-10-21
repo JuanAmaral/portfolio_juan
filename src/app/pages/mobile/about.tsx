@@ -1,13 +1,10 @@
 import Image from "next/image";
-const Profile = require("../../assets/svg/juan.svg");
-const juanmobile = require("../../assets/svg/juanmobile.svg");
+
+const juanmobile = require("../../assets/images/Picture.png");
 const blurbox = require("../../assets/svg/blurblox.svg");
 const arrow = require("../../assets/svg/arrow.svg");
 
 import * as S from "../style.ts/mobileAbout/style";
-import SocialNetwork from "../components/socialNetwork";
-import Copyright from "../components/copyright";
-import Menu from "../components/menu";
 
 export default function AboutMobile() {
   return (

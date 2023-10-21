@@ -1,5 +1,5 @@
 import Image from "next/image";
-const Profile = require("../../assets/svg/juan.svg");
+const Profile = require("../../assets/images/Picture.png");
 const blurbox = require("../../assets/svg/blurblox.svg");
 const arrow = require("../../assets/svg/arrow.svg");
 import * as S from "../style.ts/about/style";
@@ -30,8 +30,12 @@ export default function About() {
               <Image
                 src={Profile}
                 alt="profile picture"
-                width="500"
-                height="500"
+                width={300}
+                height={350}
+                style={{
+                  width: "fit-content !important",
+                  objectFit: "contain",
+                }}
               ></Image>
             </S.ContainerProfile>
             <S.ContainerText>

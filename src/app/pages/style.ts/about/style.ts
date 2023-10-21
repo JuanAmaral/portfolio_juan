@@ -40,6 +40,7 @@ export const ContainerMiddle = styled.div`
     margin-top: 2rem;
     z-index: 2;
     width: 100%;
+    justify-content: space-between;
 `;
 
 export const ConImageText = styled.div`
@@ -51,6 +52,7 @@ export const ContainerArrow = styled.div`
 `;
 export const ContainerProfile = styled.div`
     pointer-events: none;
+    padding: 4rem;
 `;
 export const ContainerText = styled.div`
     width: 50%;
