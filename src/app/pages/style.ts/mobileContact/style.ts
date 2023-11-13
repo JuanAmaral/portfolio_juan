@@ -80,8 +80,8 @@ export const Textarea = styled.textarea`
     margin-top: 3rem;
     font-size: 1rem;
     line-height:2em;
-    
-    resize: vertical;
+    height: 8rem;
+    resize: none;   
     &:focus{
         outline: none;
         caret-color: #00ffb2;

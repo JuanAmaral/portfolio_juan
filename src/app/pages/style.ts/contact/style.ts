@@ -37,7 +37,7 @@ export const BoxForm = styled.form`
         align-items: center;
         justify-content: center;
         width: 15rem;
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
 `;
@@ -85,7 +85,8 @@ export const Textarea = styled.textarea`
     margin-top: 3rem;
     font-size: 1rem;
     line-height:2em;
-    resize: vertical;
+    resize: none;
+    height: 8rem;
     &:focus{
         outline: none;
         caret-color: #00ffb2;
