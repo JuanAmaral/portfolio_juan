@@ -10,6 +10,7 @@ export default function ContactMobile() {
   const customId = "custom-id-yes";
   const customIdError = "custom-id-error";
   const customIdPending = "custom-id-pending";
+
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (form.current != null) {

@@ -4,7 +4,7 @@ import styled ,{css} from 'styled-components';
 export const Container = styled.div<{showModal: boolean}>`
     width: 120%;
     left: -10rem;
-    top: -18rem;
+    /* top: -18rem; */
     height: 100vh;
     /* filter: blur(4px); */
     position: absolute;
@@ -12,14 +12,11 @@ export const Container = styled.div<{showModal: boolean}>`
     justify-content: center;
     margin: 0rem;
     display: ${(props) => props.showModal? "flex" : "none"};
-    align-items: center;
-    @media (max-width: 1920px) {
-      top: -10rem;
-    }
-
+    align-items: flex-start;
 `; 
 
 export const Box = styled.div`
+    background: blue;
     border: 1px solid #2d2c2e;
     width: 100%;
     max-width: 53rem;
@@ -30,10 +27,10 @@ export const Box = styled.div`
     display:flex;
     flex-direction: row;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
     position: relative;
+    align-items: center;
     margin: 0rem;
 `;
 
